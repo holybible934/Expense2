@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Expense2</string>
     <string name="action_settings">Settings</string>
+    <string name="exp_name">Expense Name</string>
+    <string name="exp_amount">Amount</string>
+    <string name="positive_integer">1234</string>
+    <string name="exp_date">Date</string>
+    <string name="add">ADD</string>
 </resources>

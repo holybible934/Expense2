@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.idv.holybible.expense2.AddActivity">
+
+    <TextView
+        android:id="@+id/txtVwExpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/exp_name"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVwAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/exp_amount"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="@+id/edtxtExpName"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtExpName" />
+
+    <TextView
+        android:id="@+id/txtVwDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/exp_date"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="@+id/edtxtAmount"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtAmount" />
+
+    <EditText
+        android:id="@+id/edtxtExpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Expense1"
+        app:layout_constraintStart_toStartOf="@+id/txtVwExpName"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwExpName" />
+
+    <EditText
+        android:id="@+id/edtxtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/positive_integer"
+        android:inputType="numberDecimal"
+        android:text="1234"
+        app:layout_constraintStart_toStartOf="@+id/txtVwAmount"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwAmount" />
+
+    <EditText
+        android:id="@+id/edtxtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="1999-01-01"
+        app:layout_constraintStart_toStartOf="@+id/txtVwDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwDate" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="@+id/edtxtDate"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtDate" />
+</android.support.constraint.ConstraintLayout>
