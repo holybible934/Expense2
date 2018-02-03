@@ -3,6 +3,7 @@ package tw.idv.holybible.expense2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 
 public class AddActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class AddActivity extends AppCompatActivity {
         expDate = findViewById(R.id.edtxtDate);
     }
 
-    public void add() {
+    public void add(View view) {
         String name = expName.getText().toString();
         String date = expDate.getText().toString();
         int amount = Integer.parseInt(edAmount.getText().toString());
