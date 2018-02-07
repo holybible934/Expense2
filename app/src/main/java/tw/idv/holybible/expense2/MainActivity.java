@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        ExpenseHelper helper = new ExpenseHelper(this);
+        helper.getReadableDatabase()
+                .rawQuery("select 1", null);
+
     }
 
     @Override

@@ -11,12 +11,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class ExpenseHelper extends SQLiteOpenHelper {
 
+    public ExpenseHelper(Context context){
+        this(context, ExpenseContract.DB_NAME,
+                null, ExpenseContract.DB_VERSION, null);
+    }
+
     public ExpenseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version, DatabaseErrorHandler errorHandler) {
         super(context, name, factory, version, errorHandler);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL(ExpenseContract.CREATE_EXPENSE_TABLE);
 
     }
 
